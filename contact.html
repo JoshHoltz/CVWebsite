@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 800px)">
+  <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+  <script src="script.js" defer></script>
+  <?php include 'index.php';?>
+</head>
+
+<body id="clicked">
+
+  <!-- NAV -->
+
+  <header>
+    <nav>
+      <ul class="off">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About Me</a></li>
+        <li class="dropdown">
+          <button class="dropbtn">Projects</button>
+          <div class="dropdown-content">
+            <a href="webprojects.html">Web Projects</a>
+            <a href="cyberprojects.html">Cyber Projects</a>
+          </div>
+        </li>
+        <li><a class="ActiveNav" href="contact.html">Contact</a></li>
+        <!-- <li><a href="validation.html">Validation</a></li>
+        <li><a href="video.html">Video Demo</a></li>
+        <li><a href="sitereport.html">Report</a></li> -->
+        <li class="RightAsideNav">
+          <a href="https://drive.google.com/file/d/1PnYEp5IO6dylh1Boix70_qCbU2gMcaCY/view?usp=drive_link"
+            target="_blank">My CV</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- MAIN -->
+  <main>
+
+    <a href="#clicked" class="showNav on"></a>
+    <!-- <a href="#" class="showNav off"></a>  -->
+
+    <h1 class="FormTitle">Want to Contact Me?</h1>
+    <div class="FormBackground">
+      <div class="FormGrid">
+        <div class="FormColumn">
+          <img src="resoruces/original-D25C2C30-7C1D-4B40-94A5-001FF23AF6DF.png" alt="BitEmoji">
+          <h1>Get in Touch.</h1>
+          <h1>Either use the Form or Email Me!</h1>
+
+          <a href="mailto:Joshua.Holtz@Outlook.com">&nbsp;&nbsp;&nbsp;<i
+              class="fa-regular fa-envelope"></i>&nbsp;Joshua.Holtz@Outlook.com</a>
+          <p></p>
+          <a href="https://www.linkedin.com/in/joshua-holtz-030b42278" target="_blank">&nbsp;&nbsp;&nbsp;<i
+              class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
+          <p></p>
+          <a href="https://github.com/JoshHoltz" target="_blank">&nbsp;&nbsp;&nbsp;<i
+              class="fa-brands fa-square-github"></i>&nbsp;GitHub</a>
+        </div>
+
+        <!-- MOBILE OPTIMISATION ICONS -->
+        <div class="MobileFormIcons">
+          <a href="mailto:Joshua.Holtz@Outlook.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/joshua-holtz-030b42278" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/JoshHoltz" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+
+        <!-- Form Fields -->
+        <div class="FormColumn">
+          <h1>Contact Me</h1>
+          <form action="mailto:joshua.holtz@outlook.com" method="post">
+            <input type="text" class="FormInput" placeholder="Your Name" required>
+
+            <input type="email" class="FormInput" placeholder="Your Email" required>
+
+            <input type="tel" class="FormInput" placeholder="Your Phone Number" required>
+
+            <textarea class="FormTextArea" placeholder="Your Message..." required></textarea>
+
+            <!-- <button class="SubmitButton">Send Message</button> -->
+            <!-- <input class="SubmitButton" type="submit"> -->
+            <input type="submit" class="SubmitButton" value="Send Message">
+            <i class="fa fa-paper-plane Icon" aria-hidden="true"></i>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="FooterIcons">
+      <a href="https://www.linkedin.com/in/joshua-holtz-030b42278" target="_blank"><i
+          class="fa-brands fa-linkedin"></i></a>
+      &nbsp;
+      <a href="mailto:joshua.holtz@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+      &nbsp;
+      <a href="https://github.com/JoshHoltz" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+    </div>
+
+    <p class="FooterSubText">@JoshuaHoltz 2024 | My Portfolio Website</p>
+    <hr class="FooterLine">
+  </footer>
+
+
+
+
+</body>
+
+</html>

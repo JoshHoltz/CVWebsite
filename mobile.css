@@ -1,0 +1,246 @@
+/* All Style Pages */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer"
+    ;
+}
+
+body {
+    height: 100vh;
+}
+
+footer {
+    height: 15vh;
+}
+
+/* Navigation */
+.showNav {
+    margin: 1em;
+    height: 0.8em;
+    width: 1.25em;
+    display: block;
+    border-top: 0.2em solid #ffffff;
+    border-bottom: 0.2em solid #ffffff;
+    z-index: 1;
+}
+
+.showNav::before {
+    content: '';
+    position: absolute;
+    width: 1.25em;
+    margin-top: 0.3em;
+    border-bottom: 0.2em solid #ffffff;
+} 
+
+nav {
+    position: fixed;
+    display: none; 
+    flex-direction: column;
+    background-color: #0f0f27ba;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}  
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#clicked .on {
+    display: block;
+}
+
+#clicked:target nav {
+    display: block;
+}
+
+#clicked:target .on {
+    display: none;
+
+}
+
+.RightAsideNav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    background-color: #0f0f2700;
+    color: white;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 100vw;
+}
+
+/* .dropdown .dropbtn a {
+    border: none;
+    background-color: #1a1a46;
+    color: white;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    font-weight: bold;
+    min-width: 100vw;
+} */
+
+.dropdown-content {
+    min-width: 100vw;
+}
+
+.dropdown-content a {
+    background-color: #0f0f27d3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: contents;
+}
+
+/* Projects.html */
+.ProjectsColumn {
+    min-width: 90%;
+    max-height: 55vh;
+    overflow-y: scroll;
+}
+
+/* About.html */
+@media screen and (max-width: 800px) {
+    .GridLayout .column:first-child{
+      display: none;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .GridLayout .column:nth-child(2){
+        order: 1;
+    }
+}  
+
+.GridLayout {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1em; 
+}
+
+.column {
+    min-width: 100%; 
+    padding: 1em; 
+}
+
+.column:not(:first-child) {
+    height: 65vh;
+    width: 100vh;
+    padding-left: 1em;
+    margin: 0 0.5em;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Contact.html */
+/* @media screen and (max-width: 800px) {
+    .FormGrid .FormColumn:first-child{
+      display: none;
+    }
+  } */
+
+.FormBackground {
+    height: 50vh;
+    width: 100vh;
+    padding-top: 1em;
+}
+
+.FormTitle {
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.FormGrid {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.FormColumn {
+    width: 100%; 
+    padding: 0.5em; 
+    overflow-y: auto; 
+    box-sizing: border-box;
+} 
+
+.MobileFormIcons {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+}
+
+.MobileFormIcons a {
+    display: inline-block;
+    color: #ffffff;
+}
+
+/* Validation.html */
+
+.validationgrid {
+    display: flex;
+    overflow-x: auto;
+}
+
+.validationcolumn {
+    max-height: 60vh;
+    height: 60vh;
+    width: calc(50% - 1em);
+    min-width: 90%;
+    overflow-y: scroll;
+}
+
+.validationcolumn:not(:first-child) {
+    max-height: 60vh;
+    min-width: 90%;
+    width: calc(50% - 1em);
+    overflow-y: scroll;
+}
+
+.ImageGrid {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.25em;
+}
+
+.ImageGrid img {
+    max-width: 100%;
+    border-radius: 0.25em;
+}
+
+/* Video.html */
+
+.VideoSub {
+    /* display: none; */
+    font-size: 1.2em;
+}
+
+.VideoColumn {
+    max-height: 50vh;
+}
+
+iframe {
+    margin: 1em;
+    max-width: 90%;
+}
+
+/* sitereport.html */
+
+.ReportBackground {
+    max-height: 65%;
+}
